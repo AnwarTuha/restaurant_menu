@@ -12,6 +12,8 @@ import '../modules/menu_category/bindings/menu_category_binding.dart';
 import '../modules/menu_category/views/menu_category_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
+import '../modules/table_picker/bindings/table_picker_binding.dart';
+import '../modules/table_picker/views/table_picker_view.dart';
 
 part 'app_routes.dart';
 
@@ -55,6 +57,11 @@ class AppPages {
       transition: Transition.noTransition,
       page: () => const CartViewView(),
       binding: CartViewBinding(),
+    ),
+    GetPage(
+      name: _Paths.TABLE_PICKER,
+      page: () => const TablePickerView(),
+      binding: TablePickerBinding(),
     ),
   ];
 }
