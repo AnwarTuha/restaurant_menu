@@ -1,0 +1,57 @@
+name: rider_app_v2
+version: 1.0.0+1
+publish_to: none
+description: Bellboy Rider v2
+environment:
+  sdk: '>=3.2.1 <4.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  get: 4.6.6
+  flutter:
+    sdk: flutter
+  intl: ^0.19.0
+
+  # SIZER
+  sizer: ^2.0.15
+
+  # DYNAMIC HEIGHT GRID VIEW
+  dynamic_height_grid_view: ^0.0.4
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  build_runner:
+  flutter_gen_runner:
+
+flutter_gen:
+  output: lib/app/theme/
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  fonts:
+    - family: Jost
+      fonts:
+        - asset: assets/fonts/Jost/Jost-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Jost/Jost-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Jost/Jost-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Jost/Jost-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Jost/Jost-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Jost/Jost-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Jost/Jost-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Jost/Jost-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Jost/Jost-Black.ttf
+          weight: 900
+
+
