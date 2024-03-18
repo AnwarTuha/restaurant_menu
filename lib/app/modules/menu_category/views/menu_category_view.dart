@@ -25,7 +25,9 @@ class MenuCategoryView extends StatelessWidget {
         crossAxisCount: 2,
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
-        builder: (context, index) => const MenuItem(),
+        builder: (context, index) => MenuItem(
+          model: menus[index],
+        ),
       ),
     );
   }

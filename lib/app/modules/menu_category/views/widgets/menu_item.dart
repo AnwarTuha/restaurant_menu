@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:rider_app_v2/app/data/models/menu_model.dart';
 import 'package:rider_app_v2/app/routes/app_pages.dart';
 import 'package:rider_app_v2/app/theme/app_colors.dart';
 import 'package:rider_app_v2/app/theme/app_sizes.dart';
 import 'package:rider_app_v2/app/theme/app_typography.dart';
 
 class MenuItem extends StatelessWidget {
-  const MenuItem({super.key});
+  const MenuItem({super.key, required this.model});
+
+  final MenuModel model;
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +37,7 @@ class MenuItem extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(2.0),
               child: Text(
-                'OVEN SPECIALS',
+                model.menuTitle,
                 style: AppTypography.menuBold.copyWith(
                   fontWeight: FontWeight.w500,
                   fontSize: AppSizes.fSize8,
