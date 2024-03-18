@@ -8,7 +8,7 @@ class SplashController extends GetxController {
   void onInit() {
     Future.delayed(
       const Duration(seconds: 1),
-      () => Get.offAndToNamed(Routes.TABLE_PICKER),
+      () => Get.offAndToNamed(Routes.TABLE_LIST),
     );
     super.onInit();
   }

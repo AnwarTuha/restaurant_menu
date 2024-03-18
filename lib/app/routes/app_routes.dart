@@ -11,6 +11,7 @@ abstract class Routes {
   static const FOOD_DETAIL = _Paths.FOOD_DETAIL;
   static const CART_VIEW = _Paths.CART_VIEW;
   static const TABLE_PICKER = _Paths.TABLE_PICKER;
+  static const TABLE_LIST = _Paths.TABLE_LIST;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const FOOD_DETAIL = '/food-detail';
   static const CART_VIEW = '/cart-view';
   static const TABLE_PICKER = '/table-picker';
+  static const TABLE_LIST = '/table-list';
 }

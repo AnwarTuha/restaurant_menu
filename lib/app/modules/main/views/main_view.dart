@@ -21,6 +21,11 @@ class MainView extends GetView<MainController> {
             SideMenuWidget(
               headerButtons: [
                 SideMenuButton(
+                  icon: Icons.arrow_back,
+                  onTap: () => Get.back(),
+                ),
+                SizedBox(height: AppSizes.vSize2 * 0.8),
+                SideMenuButton(
                   icon: Icons.shopping_cart_outlined,
                   onTap: () => Get.toNamed(Routes.CART_VIEW),
                 ),
